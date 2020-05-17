@@ -1,0 +1,9 @@
+<p>primeiro works!</p>
+
+{{ nome }}
+
+<p [innerHtml]="nome" > texto </p>
+
+<input type="text" #texto [(ngModel)]="nome" > 
+
+<button (click)="mostrarMensagem(texto.value)" >Clique aqui</button>
