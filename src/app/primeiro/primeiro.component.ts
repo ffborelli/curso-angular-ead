@@ -9,6 +9,8 @@ export class PrimeiroComponent implements OnInit {
 
   nome = "Grande Porte";
 
+  cursos = [ "Angular", "Cobol", "Java", "Lógica de Programação" ];
+
   constructor() { }
 
   mostrarMensagem(valor){

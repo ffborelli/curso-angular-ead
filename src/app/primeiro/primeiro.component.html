@@ -4,6 +4,13 @@
 
 <p [innerHtml]="nome" > texto </p>
 
-<input type="text" #texto [(ngModel)]="nome" > 
+<input type="text" #texto [(ngModel)]="nome" >
 
 <button (click)="mostrarMensagem(texto.value)" >Clique aqui</button>
+
+{{ cursos }}
+
+<ul *ngIf="cursos.length > 3">
+  <li *ngFor="let c of cursos" > {{ c }} </li>
+</ul>
+
