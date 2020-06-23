@@ -2,9 +2,9 @@
 
 {{ nome }}
 
-<p [innerHtml]="nome" > texto </p>
-
 <input type="text" #texto [(ngModel)]="nome" >
+
+<p appHighlight > Meu HighLight</p>
 
 <button (click)="mostrarMensagem(texto.value)" >Clique aqui</button>
 
