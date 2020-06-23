@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class PrimeiroComponent implements OnInit {
 
   nome = "Grande Porte";
+  show  = true;
 
   cursos = [ "Angular", "Cobol", "Java", "Lógica de Programação" ];
 
