@@ -30,4 +30,4 @@
   Curso do usuário : {{  upperCase()  }}
 </p>
 
-<app-usuario-list [usuarioFilho]="usuario"  ></app-usuario-list>
+<app-usuario-list [usuarioFilho]="usuario"  (meuNotificador)="novaIdade( $event )"  ></app-usuario-list>

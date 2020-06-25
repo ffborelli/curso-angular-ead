@@ -40,4 +40,8 @@ export class PrimeiroComponent implements OnInit {
     return this.usuario.curso?.nome.toUpperCase()  ?? 'Padrão';
   }
 
+  novaIdade( novaIdadePai ){
+    alert ( 'Nova idade: ' + novaIdadePai);
+  }
+
 }
