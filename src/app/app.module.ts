@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { PrimeiroComponent } from './primeiro/primeiro.component';
 import { FormsModule } from '@angular/forms';
 import { HighlightDirective } from './diretivas/highlight.directive';
+import { UsuariosModule } from './usuarios/usuarios.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HighlightDirective } from './diretivas/highlight.directive';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    UsuariosModule
   ],
   providers: [],
   bootstrap: [AppComponent]
