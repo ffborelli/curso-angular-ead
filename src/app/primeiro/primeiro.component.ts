@@ -10,6 +10,20 @@ export class PrimeiroComponent implements OnInit {
   nome = "Grande Porte";
   show  = true;
 
+  // usuario = {
+  //   id: 1,
+  //   nome: 'Grande Porte',
+  //   curso : {
+  //     nome: 'Angular'
+  //   }
+  //  };
+
+  usuario = {
+    id: 1,
+    nome: 'Grande Porte',
+    curso : null
+   };
+
   cursos = [ "Angular", "Cobol", "Java", "Lógica de Programação" ];
 
   constructor() { }
@@ -20,6 +34,10 @@ export class PrimeiroComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  }
+
+  upperCase(){
+    return this.usuario.curso?.nome.toUpperCase()  ?? 'Padrão';
   }
 
 }

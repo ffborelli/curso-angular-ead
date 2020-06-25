@@ -17,3 +17,15 @@
 <div [ngClass]="{ 'alert': true, 'alert-primary' : show, 'alert-danger': false }" [ngStyle]="{ 'font-size': '30px'}" >
   Esssa é minha div
 </div>
+
+<!-- <p>
+  Curso do Usuário : {{ usuario.curso != null ? usuario.curso.nome : ''  }}
+</p> -->
+
+<p>
+  Curso do Usuário : {{  usuario.curso?.nome   }}
+</p>
+
+<p>
+  Curso do usuário : {{  upperCase()  }}
+</p>
