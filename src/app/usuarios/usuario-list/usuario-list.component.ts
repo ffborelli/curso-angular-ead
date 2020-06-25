@@ -8,14 +8,14 @@ import { Component, OnInit, Input } from '@angular/core';
 export class UsuarioListComponent implements OnInit {
 
   @Input()
-  usuarios = [
-    { id : 0, nome : 'Usuário 0'},
-    { id : 1, nome : 'Usuário 1'},
-  ]
+  usuarioFilho : any;
 
-  constructor() { }
+  constructor() {
+
+   }
 
   ngOnInit(): void {
+    console.log ( this.usuarioFilho );
   }
 
 }
