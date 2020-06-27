@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
+import { UsuarioService } from '../usuario.service';
 
 @Component({
   selector: 'app-usuario-list',
@@ -15,12 +16,13 @@ export class UsuarioListComponent implements OnInit {
   @Input()
   usuarioFilho : any;
 
-  constructor() {
-
+  constructor( private usuarioService : UsuarioService  ) {
+    //this.usuarioService = new UsuarioService();
   }
 
   ngOnInit(): void {
     console.log ( this.usuarioFilho );
+    //this.usuarioService.mostrarMensagem();
   }
 
   addIdade(){

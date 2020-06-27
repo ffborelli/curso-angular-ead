@@ -1,8 +1,8 @@
 <p>primeiro works!</p>
 
-{{ nome }}
+<!-- {{ nome }} -->
 
-<input type="text" #texto [(ngModel)]="nome" >
+<!-- <input type="text" #texto [(ngModel)]="nome" >
 
 <p appHighlight > Meu HighLight</p>
 
@@ -16,18 +16,18 @@
 
 <div [ngClass]="{ 'alert': true, 'alert-primary' : show, 'alert-danger': false }" [ngStyle]="{ 'font-size': '30px'}" >
   Esssa é minha div
-</div>
+</div> -->
 
 <!-- <p>
   Curso do Usuário : {{ usuario.curso != null ? usuario.curso.nome : ''  }}
 </p> -->
 
-<p>
+<!-- <p>
   Curso do Usuário : {{  usuario.curso?.nome   }}
 </p>
 
 <p>
   Curso do usuário : {{  upperCase()  }}
-</p>
+</p> -->
 
 <app-usuario-list [usuarioFilho]="usuario"  (meuNotificador)="novaIdade( $event )"  ></app-usuario-list>
