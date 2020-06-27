@@ -23,6 +23,13 @@ export class UsuarioListComponent implements OnInit {
   ngOnInit(): void {
     console.log ( this.usuarioFilho );
     //this.usuarioService.mostrarMensagem();
+
+    this.usuarioService.getAll().subscribe(
+      function ( resposta ) {
+        console.log ( resposta);
+      }
+    );
+
   }
 
   addIdade(){
