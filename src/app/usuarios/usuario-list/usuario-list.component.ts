@@ -8,6 +8,7 @@ import { UsuarioService } from '../usuario.service';
 })
 export class UsuarioListComponent implements OnInit {
 
+  usuarios : any = null;
   idade : number = 0;
 
   @Output()
@@ -25,8 +26,9 @@ export class UsuarioListComponent implements OnInit {
     //this.usuarioService.mostrarMensagem();
 
     this.usuarioService.getAll().subscribe(
-      function ( resposta ) {
+      ( resposta ) => {
         console.log ( resposta);
+        this.usuarios = resposta;
       }
     );
 
