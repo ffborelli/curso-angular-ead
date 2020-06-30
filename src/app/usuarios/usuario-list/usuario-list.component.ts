@@ -11,6 +11,8 @@ export class UsuarioListComponent implements OnInit {
   usuarios : any = null;
   idade : number = 0;
 
+  dataAtual = new Date();
+
   @Output()
   meuNotificador = new EventEmitter();
 

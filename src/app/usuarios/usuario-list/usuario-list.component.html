@@ -18,6 +18,26 @@
 
 </table>
 
+<p>
+  Sem Pipe : {{ dataAtual  }}
+</p>
+
+<p>
+  Com Pipe : {{ dataAtual | date : "dd/MM/yyyy" }}
+</p>
+
+<!-- <p>
+  {{ this.usuarios | json }}
+</p> -->
+
+<p>
+  R$ : {{  2000  }}
+</p>
+
+<p>
+  {{ 2000 | currency : 'BRL':'symbol':'1.2-2' }}
+</p>
+
 <div class="row justify-content-center">
 
   <div class="col-lg-1">
